@@ -124,28 +124,28 @@ body {
     height: 255px;
 
     float: left;
-    margin: 0 10 10 10;
+    margin: 0px 10px 10px 10px;
 }
 
 .pic_right {
     width: 340px;
     height: 255px;
     float: right;
-    margin: 0 10 10 10;
+    margin: 0px 10px 10px 10px;
 }
 
 .pic_center {
     width: 340px;
     height: 255px;
     float: none;
-    margin: 0 0 10 0;
+    margin: 0px 0px 10px 0px;
 }
 
 .picsmall_left {
     width: 150px;
     height: 100px;
     float: left;
-    margin: 0 10 10 10;
+    margin: 0px 10px 10px 10px;
 
 }
 
@@ -153,14 +153,14 @@ body {
     width: 150px;
     height: 100px;
     float: right;
-    margin: 0 10 10 10;
+    margin: 0px 10px 10px 10px;
 
 }
 
 .pic_original {
     width: auto;
     height: auto;
-    margin: 0 10 10 10;
+    margin: 0px 10px 10px 10px;
 
 }
 

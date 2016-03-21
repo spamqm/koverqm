@@ -3,23 +3,23 @@ ul {
 }
 
 .redcolor {
-    width: 30;
-    height: 30;
-    background-color: "red";
+    width: 30px;
+    height: 30px;
+    background-color: red;
     float: none;
 }
 
 .yellowcolor {
-    width: 30;
-    height: 30;
-    background-color: "yellow";
+    width: 30px;
+    height: 30px;
+    background-color: yellow;
     float: none;
 }
 
 .greencolor {
-    width: 30;
-    height: 30;
-    background-color: "green";
+    width: 30px;
+    height: 30px;
+    background-color: green;
     float: none;
 }
 
