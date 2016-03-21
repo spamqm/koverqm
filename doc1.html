@@ -1,0 +1,42 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+        "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <title>Введите имя и фамилию</title>
+    
+    <script type="text/javascript">
+        <!--
+
+        function f_click() { // Возвращаем значения
+            var obj1 = {};
+            obj1.pole1 = document.forms[0].pole1.value;
+            obj1.pole2 = document.forms[0].pole2.value;
+            window.returnValue = obj1;
+            window.close();
+        }
+        function f_load() { // Задаем значения
+            document.forms[0].pole1.value = window.dialogArguments[0];
+            document.forms[0].pole2.value = window.dialogArguments[1];
+        }
+        //-->
+    </script>
+</head>
+<body onload="f_load();">
+<form action="" id="frm">
+    <div style="text-align: center">
+        Имя:<br><input type="text" name="pole1"><br>
+        Фамилия:<br><input type="text" name="pole2"><br>
+        <input type="reset" value="Очистить">
+        <input type="button" value="OK" onclick="f_click();">
+    </div>
+</form>
+
+<!--#include virtual="/.narodsys/direct.html"-->
+
+<i style="background:url(//www.tns-counter.ru/V13a****yandex_ru/ru/CP1251/tmsec=narod_total/0)"></i>
+
+<!--#include virtual="/.narodsys/metrika_counter.html"-->
+
+<!-- copyright (t3) --><div align="center">Хостинг от <a href="http://www.ucoz.ru/" title="Создать сайт бесплатно">uCoz</a><br /></div><!-- /copyright -->
+</body>
+</html>

@@ -1,0 +1,40 @@
+ul {
+    list-style: none;
+}
+
+.redcolor {
+    width: 30;
+    height: 30;
+    background-color: "red";
+    float: none;
+}
+
+.yellowcolor {
+    width: 30;
+    height: 30;
+    background-color: "yellow";
+    float: none;
+}
+
+.greencolor {
+    width: 30;
+    height: 30;
+    background-color: "green";
+    float: none;
+}
+
+.large {
+
+    width: 20%;
+    position: relative;
+    float: left;
+}
+
+.output {
+
+    background-color: #e4caa7;
+    width: 10%;
+    position: relative;
+    overflow: auto;
+
+}

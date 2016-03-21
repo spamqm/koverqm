@@ -1,0 +1,118 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+    <title>
+        У Григорика / Разное
+    </title>
+    
+    <link rel="stylesheet" type="text/css" href="css/main.css"/>
+    <link rel="stylesheet" type="text/css" href="css/other.css"/>
+    <script>
+        function changecolor() {
+            pictures = document.getElementById("spantext");
+            pictures.style.color = "red";
+
+        }
+
+        function changesize(element) {
+            size = document.getElementById(element);
+            size.style.width = "100";
+            size.style.height = "100";
+        }
+
+        function defaultsize(element) {
+            size = document.getElementById(element);
+            size.style.width = "30";
+            size.style.height = "30";
+        }
+
+        function menuIn(element) {
+            size = document.getElementById(element);
+            size.style.fontSize = "17";
+            size.style.fontFamily = "Verdana";
+        }
+
+        function menuOut(element) {
+            size = document.getElementById(element);
+            size.style.fontSize = "15";
+            size.style.fontFamily = "Times";
+        }
+
+
+        function picsize(element) {
+            size = document.getElementById(element);
+            size.style.width = "500";
+            size.style.height = "333";
+        }
+
+        function picdefsize(element) {
+            size = document.getElementById(element);
+            size.style.width = "150";
+            size.style.height = "100";
+        }
+
+
+    </script>
+</head>
+<body>
+<div class="title">
+    <h2 style="font-family:Verdana">
+        у Григорика
+    </h2>
+
+    <div style="display:none">
+        http://www.gcmsite.ru/?pg=art&id=meta-keywords-create
+    </div>
+</div>
+<div class="menu">
+    <ul style="list-style:none">
+        <a href="main.html" id="main" onmouseover="menuIn('main')" onmouseout="menuOut('main')">
+            Главная
+        </a>
+        <li>
+            <a href="pics.html" id="pictures" onmouseover="menuIn('pictures')" onmouseout="menuOut('pictures')">
+                Картинки
+            </a>
+        </li>
+        <li>
+            <a href="links.html" id="links" onmouseover="menuIn('links')" onmouseout="menuOut('links')">
+                Ссылки
+            </a>
+        <li>
+            <a href="dogs.html">
+                Борзые
+            </a>
+        </li>
+        </li>
+        <li>
+        </li>
+    </ul>
+</div>
+<div class="column1">
+    <img class="picsmall_left" src="http://img-fotki.yandex.ru/get/4426/121764612.0/0_7d1ac_46bdc964_L" id="plat1"
+         onmouseover="picsize('plat1')" onmouseout="picdefsize('plat1')">
+    </img>
+</div>
+<div class="column2">
+    <div class="redcolor" id="redcolor_id" onmouseover="changesize('redcolor_id')"
+         onmouseout="defaultsize('redcolor_id')">
+    </div>
+    <div class="yellowcolor" id="yellowcolor_id" onmouseover="changesize('yellowcolor_id')"
+         onmouseout="defaultsize('yellowcolor_id')">
+    </div>
+    <div class="greencolor" id="greencolor_id" onmouseover="changesize('greencolor_id')"
+         onmouseout="defaultsize('greencolor_id')">
+    </div>
+</div>
+
+
+
+<!--#include virtual="/.narodsys/direct.html"-->
+
+<i style="background:url(//www.tns-counter.ru/V13a****yandex_ru/ru/CP1251/tmsec=narod_total/0)"></i>
+
+<!--#include virtual="/.narodsys/metrika_counter.html"-->
+
+<!-- copyright (t3) --><div align="center">Хостинг от <a href="http://www.ucoz.ru/" title="Создать сайт бесплатно">uCoz</a><br /></div><!-- /copyright -->
+</body>
+</html>

@@ -1,0 +1,150 @@
+<html>
+<head>
+    
+    <title>
+
+    </title>
+    <link rel="stylesheet" type="text/css" href="css/main.css"/>
+
+    <script type="text/javascript">
+
+
+        function calc_wins() {
+            var percent,wins,all,need,result_last,i;
+            i = 0;
+
+            warning_element = document.getElementById("warning");
+            all_element = document.getElementsByName("all_games")[0];
+            wins_element = document.getElementsByName("wins")[0];
+            need_element = document.getElementsByName("I_want_wins")[0];
+
+            all = all_element.value;
+            wins = wins_element.value;
+            need = need_element.value;
+
+            if (need < 0 || need >= 100) {
+                warning_element.innerHTML = "Неправильное значение";
+                need_element.style.borderColor = "red";
+
+                return false;
+            } else {
+                warning_element.innerHTML = "";
+                need_element.style.borderColor = "";
+            }
+
+            if (all <= 0) {
+                warning_element.innerHTML = "Неправильное значение";
+                all_element.style.borderColor = "red";
+                return false;
+            } else {
+                warning_element.innerHTML = "";
+                all_element.style.borderColor = "";
+            }
+            if (wins <= 0) {
+                warning_element.innerHTML = "Неправильное значение";
+                wins_element.style.borderColor = "red";
+                return false;
+            } else {
+                warning_element.innerHTML = "";
+                wins_element.style.borderColor = "";
+            }
+
+
+            percent = parseInt((wins / all ) * 100);
+
+            document.getElementById("result").innerHTML = percent + " %";
+
+            do {
+                percent = ((wins / all ) * 100);
+                wins++;
+                all++;
+                i++;
+            } while (percent <= need);
+
+            document.getElementById("result_i_need").innerHTML = i;
+
+        }
+    </script>
+    <style>
+        .wotpage {
+            width: 200px;
+            height: 200px;
+            background-color: #e4caa7;
+            color: black;
+
+        }
+
+
+    </style>
+
+</head>
+<body>
+
+
+<table style="position: relative;">
+    <tbody>
+    <tr>
+        <td>Кол-во боев:</td>
+        <td><input type="text" name="all_games"></td>
+    <tr>
+    <tr>
+        <td>Кол-во побед:</td>
+        <td><input type="text" name="wins"></td>
+    <tr>
+    <tr>
+        <td>Желаемый процент побед:&nbsp;</td>
+        <td><input type="text" name="I_want_wins"></td>
+    <tr>
+
+    <tr>
+        <td>
+            <button name="calc" id="calc" onmouseup="calc_wins()">Расчет</button>
+        </td>
+        <td id="warning" style="color:red"></td>
+
+
+    </tr>
+    <tr>
+        <td>Текущий процент побед:</td>
+        <td id="result"></td>
+    </tr>
+    <tr>
+        <td>Кол-во боев нужно:</td>
+        <td id="result_i_need"></td>
+    </tr>
+
+    </tbody>
+</table>
+
+
+
+
+<br>
+
+<!--
+<script type="text/javascript">
+    wot_page = document.createElement("div");
+    wot_page.innerHTML = "Wot page";
+    wot_page.className = "wotpage";
+
+
+    wot_frame = document.createElement("frame");
+
+    wot_page.appendChild(wot_frame);
+
+
+    document.body.appendChild(wot_page);
+
+
+</script>-->
+
+
+<!--#include virtual="/.narodsys/direct.html"-->
+
+<i style="background:url(//www.tns-counter.ru/V13a****yandex_ru/ru/CP1251/tmsec=narod_total/0)"></i>
+
+<!--#include virtual="/.narodsys/metrika_counter.html"-->
+
+<!-- copyright (t3) --><div align="center">Хостинг от <a href="http://www.ucoz.ru/" title="Создать сайт бесплатно">uCoz</a><br /></div><!-- /copyright -->
+</body>
+</html>

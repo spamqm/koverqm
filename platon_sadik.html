@@ -1,0 +1,100 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+    <title> у Григорика / Картинки
+    </title>
+    
+    <link rel="stylesheet" type="text/css" href="css/main.css"/>
+</head>
+<body>
+<div class="title">
+    <img style="border:none;float:left;height:80;width:72 " src="pics/man.gif" alt="man"/>
+
+    <h2 style="font-family:Verdana">
+        &nbsp;&nbsp;&nbsp; у Григорика
+    </h2>
+
+    <div style="display:none">
+        http://www.gcmsite.ru/?pg=art&id=meta-keywords-create
+    </div>
+</div>
+<div class="menu">
+    <ul style="list-style:none">
+        <a href="main.html">
+            Главная
+        </a>
+        <li>
+            <a href="pics.html">
+                Картинки
+            </a>
+        </li>
+        <li>
+            <a href="links.html">
+                Ссылки
+            </a>
+        </li>
+        <li>
+
+        </li>
+        <li>
+
+        </li>
+    </ul>
+</div>
+<div class="column1">
+
+    <script>
+        function largepic(source) {
+
+
+            document.getElementById("column2").innerHTML = ("<img src=" + source + "/>")
+
+        }
+
+        var id = [];
+
+        var images = ["http://img-fotki.yandex.ru/get/4426/121764612.0/0_7d1ac_46bdc964",
+            "http://img-fotki.yandex.ru/get/4527/121764612.0/0_7d1ad_3039f3fb",
+            "http://img-fotki.yandex.ru/get/4/121764612.0/0_7d7f4_90767d37","http://img-fotki.yandex.ru/get/4426/121764612.0/0_7d1ae_ede2c167"];
+
+        var tempimg,linka1,addid;
+        for (i = 0; i < images.length; i++) {
+
+            // id [i] = parseInt(Math.random() * 100000000) + "";
+
+            //   addid = " id=" + "\'" + id[i] + "\'";
+
+            large_source = images[i] + "_L.png";
+            small_source = images[i] + "_S.png";
+
+            {
+
+                someaction = "largepic(\"" + large_source + "\")";
+                mouseaction = " onmousedown=\'" + someaction + "\'";
+
+
+            }
+            document.write("<img class='picsmall_left' " + " src=\'" + small_source + "\'" + mouseaction + "/>")
+
+        }
+
+    </script>
+
+
+</div>
+<div class="column2" id="column2" style="position:fixed; left: 50%; top: 90px; min-width: 500px;">
+
+
+</div>
+
+
+
+<!--#include virtual="/.narodsys/direct.html"-->
+
+<i style="background:url(//www.tns-counter.ru/V13a****yandex_ru/ru/CP1251/tmsec=narod_total/0)"></i>
+
+<!--#include virtual="/.narodsys/metrika_counter.html"-->
+
+<!-- copyright (t3) --><div align="center">Хостинг от <a href="http://www.ucoz.ru/" title="Создать сайт бесплатно">uCoz</a><br /></div><!-- /copyright -->
+</body>
+</html>

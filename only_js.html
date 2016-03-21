@@ -1,0 +1,75 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    
+    <title>JS only</title>
+    <script type="text/javascript">
+        function getinfo() {
+
+            temp = document.getElementById("ta1").value;
+            document.getElementById("right").innerHTML = (temp + "").length;
+        }
+        function training1() {
+
+            mydate = new Date();
+            document.getElementById("right").innerHTML = mydate.toString();
+        }
+
+
+    </script>
+
+    <style type="text/css">
+        .left {
+
+            position: relative;
+            width: 250px;
+            height: 400px;
+            background-color: #f0f8ff;
+            float: left;
+
+        }
+
+        .right {
+            position: relative;
+            width: 150px;
+            height: 150px;
+            background-color: #d3d3d3;
+            overflow: hidden;;
+
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="left">
+
+
+    <textarea id="ta1" rows="3" cols="20"></textarea>
+    <button onmouseup="getinfo()">Get text</button>
+    <button id="getdate" onmouseup="training1()">Get current date</button>
+
+    <br>
+
+    <form method="post" action="submit.php">
+        Login: <input type="text" id="text1"><br>
+        Password: <input type="password" id="password1"/><br>
+        <input type="submit" id="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+
+</div>
+<div class="right" id="right"></div>
+
+
+
+<!--#include virtual="/.narodsys/direct.html"-->
+
+<i style="background:url(//www.tns-counter.ru/V13a****yandex_ru/ru/CP1251/tmsec=narod_total/0)"></i>
+
+<!--#include virtual="/.narodsys/metrika_counter.html"-->
+
+<!-- copyright (t3) --><div align="center">Хостинг от <a href="http://www.ucoz.ru/" title="Создать сайт бесплатно">uCoz</a><br /></div><!-- /copyright -->
+</body>
+</html>

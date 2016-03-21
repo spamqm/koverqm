@@ -1,0 +1,136 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+    <title> у Григорика / Картинки / Николаевка 2012
+    </title>
+    
+    <link rel="stylesheet" type="text/css" href="css/main.css"/>
+
+</head>
+<body>
+<div class="title">
+    <img style="border:none;float:left;height:80;width:72 " src="pics/man.gif" alt="man"/>
+
+    <h2 style="font-family:Verdana">
+        &nbsp;&nbsp;&nbsp; у Григорика
+    </h2>
+
+    <div style="display:none">
+        http://www.gcmsite.ru/?pg=art&id=meta-keywords-create
+    </div>
+</div>
+<div class="menu">
+    <ul style="list-style:none">
+        <a href="main.html">
+            Главная
+        </a>
+        <li>
+            <a href="pics.html">
+                Картинки
+            </a>
+        </li>
+        <li>
+            <a href="links.html">
+                Ссылки
+            </a>
+        </li>
+        <li>
+
+        </li>
+        <li>
+
+        </li>
+    </ul>
+</div>
+<div class="column1">
+
+
+    <script>
+        function largepic(source) {
+
+
+            document.getElementById("column2").innerHTML = ("<img src=" + source + "/>")
+
+        }
+
+        var id = [];
+
+        var images = ["http://img-fotki.yandex.ru/get/6612/121764612.0/0_97342_585b2eab",
+            "http://img-fotki.yandex.ru/get/6613/121764612.0/0_97380_b31d22c1",
+            "http://img-fotki.yandex.ru/get/6410/121764612.0/0_97372_7f38487b",
+            "http://img-fotki.yandex.ru/get/6611/121764612.0/0_9737a_2e5d4929",
+            "http://img-fotki.yandex.ru/get/6613/121764612.0/0_9737d_179cb276",
+            "http://img-fotki.yandex.ru/get/6610/121764612.0/0_9737f_4f09d2f2",
+            "http://img-fotki.yandex.ru/get/6413/121764612.0/0_9736e_2bf86f52",
+            "http://img-fotki.yandex.ru/get/6410/121764612.0/0_97370_2147fbe6",
+            "http://img-fotki.yandex.ru/get/6413/121764612.0/0_97371_810b21f1",
+            "http://img-fotki.yandex.ru/get/6610/121764612.0/0_97374_9983227e",
+            "http://img-fotki.yandex.ru/get/6411/121764612.0/0_97375_ef594ee2",
+            "http://img-fotki.yandex.ru/get/6411/121764612.0/0_97379_6166554d",
+            "http://img-fotki.yandex.ru/get/6520/121764612.0/0_995a2_af3475e2",
+            "http://img-fotki.yandex.ru/get/6522/121764612.0/0_995a3_3892aba0",
+            "http://img-fotki.yandex.ru/get/6520/121764612.0/0_995a4_80d05",
+            "http://img-fotki.yandex.ru/get/6523/121764612.0/0_995a6_62b9254a",
+            "http://img-fotki.yandex.ru/get/6520/121764612.0/0_995a7_683c71db",
+            "http://img-fotki.yandex.ru/get/6620/121764612.0/0_995a8_ab769b0",
+            "http://img-fotki.yandex.ru/get/6519/121764612.0/0_995aa_56adf7a9",
+            "http://img-fotki.yandex.ru/get/6421/121764612.0/0_995ab_94552540",
+            "http://img-fotki.yandex.ru/get/6423/121764612.0/0_995ac_12099807",
+            "http://img-fotki.yandex.ru/get/6521/121764612.0/0_995ae_605bcffc",
+            "http://img-fotki.yandex.ru/get/6522/121764612.0/0_995af_d1671397",
+            "http://img-fotki.yandex.ru/get/6422/121764612.0/0_995b1_1b041ae",
+            "http://img-fotki.yandex.ru/get/6619/121764612.0/0_995b2_e598b81c",
+            "http://img-fotki.yandex.ru/get/6619/121764612.0/0_995b4_6d71098d",
+            "http://img-fotki.yandex.ru/get/6422/121764612.0/0_995b5_94c702a6",
+            "http://img-fotki.yandex.ru/get/6520/121764612.0/0_995b6_c09be5e1",
+            "http://img-fotki.yandex.ru/get/6620/121764612.0/0_995b8_3704e2b6",
+            "http://img-fotki.yandex.ru/get/6421/121764612.0/0_995b9_6d2abdae",
+            "http://img-fotki.yandex.ru/get/6422/121764612.0/0_995bb_495ee0d8",
+            "http://img-fotki.yandex.ru/get/6622/121764612.0/0_995be_8f09f5c2",
+            "http://img-fotki.yandex.ru/get/6420/121764612.1/0_995bf_cfbad8e2"
+        ];
+
+        var tempimg,linka1,addid;
+        for (i = 0; i < images.length; i++) {
+
+            // id [i] = parseInt(Math.random() * 100000000) + "";
+
+            //   addid = " id=" + "\'" + id[i] + "\'";
+
+            large_source = images[i] + "_L.png";
+            small_source = images[i] + "_S.png";
+            original_source = images[i] + "_orig.png";
+
+
+            {
+
+                someaction = "largepic(\"" + large_source + "\")";
+                mouseaction = " onmousedown=\'" + someaction + "\'";
+
+
+            }
+            document.write("<img class='pic_original' " + " src=\'" + small_source + "\'" + mouseaction + "/>")
+
+        }
+
+
+    </script>
+
+
+</div>
+
+<div class="column2" id="column2" style="position:fixed; left: 50%; top: 90px; min-width: 500px;">
+
+
+</div>
+
+
+<!--#include virtual="/.narodsys/direct.html"-->
+
+<i style="background:url(//www.tns-counter.ru/V13a****yandex_ru/ru/CP1251/tmsec=narod_total/0)"></i>
+
+<!--#include virtual="/.narodsys/metrika_counter.html"-->
+
+<!-- copyright (t3) --><div align="center">Хостинг от <a href="http://www.ucoz.ru/" title="Создать сайт бесплатно">uCoz</a><br /></div><!-- /copyright -->
+</body>
+</html>

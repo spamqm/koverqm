@@ -1,0 +1,182 @@
+A {
+    color: black;
+}
+
+A:visited {
+    color: black;
+}
+
+A:hover {
+    color: red;
+}
+
+UL {
+    list-style: none;
+}
+
+IMG {
+    border: 1px solid #808080;
+    border-radius: 10px;
+}
+
+body {
+
+    font-family: Times;
+    color: black;
+
+    padding: 0;
+    margin: 0;
+    min-width: 800px;
+
+
+}
+
+.title {
+
+    /* size */
+
+    width: 90%;
+    height: 85px;
+    position: relative;
+    left: 2%;
+
+    /* decoration */
+
+    font-size: 18px;
+    text-align: left;
+
+}
+
+.menu {
+    /* size */
+
+    width: 7%;
+    height: 70%;
+
+    min-width: 130px;
+    position: relative;
+    float: left;
+
+    /* decoration */
+
+    font-size: 15px;
+    background-color: white;
+    text-align: justify;
+
+}
+
+.column1 {
+
+    /* size */
+
+    width: 35%;
+    min-width: 200px;
+
+    position: relative;
+    float: left;
+    overflow: hidden;
+    padding: 10px;
+
+    /* decoration */
+    font-family: Verdana;
+
+    text-align: justify;
+    color: black;
+    background-color: #EFEDDF;
+   // background: url("");
+
+}
+
+.column2 {
+
+    /* size */
+
+    width: 40%;
+    min-width: 300px;
+
+    position: relative;
+    float: left;
+    overflow: hidden;
+    padding: 10px;
+
+    /* decoration */
+
+    text-align: justify;
+    color: #564132;
+
+}
+
+.links {
+    font-family: Arial;
+    font-size: 10px;
+    font-style: italic;
+
+}
+
+.lenta {
+    position: absolute;
+    left: 200px;
+
+}
+
+.pic_left {
+    width: 340px;
+    height: 255px;
+
+    float: left;
+    margin: 0 10 10 10;
+}
+
+.pic_right {
+    width: 340px;
+    height: 255px;
+    float: right;
+    margin: 0 10 10 10;
+}
+
+.pic_center {
+    width: 340px;
+    height: 255px;
+    float: none;
+    margin: 0 0 10 0;
+}
+
+.picsmall_left {
+    width: 150px;
+    height: 100px;
+    float: left;
+    margin: 0 10 10 10;
+
+}
+
+.picsmall_right {
+    width: 150px;
+    height: 100px;
+    float: right;
+    margin: 0 10 10 10;
+
+}
+
+.pic_original {
+    width: auto;
+    height: auto;
+    margin: 0 10 10 10;
+
+}
+
+.index {
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    left: 40%;
+    top: 30%;
+
+    font-family: Verdana;
+    font-size: x-large;
+
+}
+
+
+
+
+
