@@ -21,7 +21,7 @@ IMG {
 
 body {
 
-    font-family: Times;
+    font-family: "Times New Roman", serif;
     color: black;
 
     padding: 0;
@@ -78,7 +78,7 @@ body {
     padding: 10px;
 
     /* decoration */
-    font-family: Verdana;
+    font-family: "Verdana", serif;
 
     text-align: justify;
     color: black;
@@ -107,7 +107,7 @@ body {
 }
 
 .links {
-    font-family: Arial;
+    font-family: Arial, serif;
     font-size: 10px;
     font-style: italic;
 
@@ -124,28 +124,28 @@ body {
     height: 255px;
 
     float: left;
-    margin: 0px 10px 10px 10px;
+    margin: 0 10px 10px 10px;
 }
 
 .pic_right {
     width: 340px;
     height: 255px;
     float: right;
-    margin: 0px 10px 10px 10px;
+    margin: 0 10px 10px 10px;
 }
 
 .pic_center {
     width: 340px;
     height: 255px;
     float: none;
-    margin: 0px 0px 10px 0px;
+    margin: 0 0 10px 0;
 }
 
 .picsmall_left {
     width: 150px;
     height: 100px;
     float: left;
-    margin: 0px 10px 10px 10px;
+    margin: 0 10px 10px 10px;
 
 }
 
@@ -153,7 +153,7 @@ body {
     width: 150px;
     height: 100px;
     float: right;
-    margin: 0px 10px 10px 10px;
+    margin: 0 10px 10px 10px;
 
 }
 
@@ -171,7 +171,7 @@ body {
     left: 40%;
     top: 30%;
 
-    font-family: Verdana;
+    font-family: Verdana, serif;
     font-size: x-large;
 
 }
